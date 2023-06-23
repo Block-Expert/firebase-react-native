@@ -1,5 +1,6 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
+apply plugin: "com.google.gms.google-services"
 
 import com.android.build.OutputFile
 
@@ -117,6 +118,12 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            storeFile file('your_key_name.keystore')
+            storePassword 'your_key_store_password'
+            keyAlias 'your_key_alias'
+            keyPassword 'your_key_file_alias_password'
+        }
     }
     buildTypes {
         debug {
@@ -154,6 +161,18 @@ dependencies {
 
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
 
+    implementation platform('com.google.firebase:firebase-bom:32.1.0')
+
+    implementation('com.google.firebase:firebase-analytics')
+
+    implementation('com.google.firebase:firebase-auth')
+
+    implementation('com.google.firebase:firebase-firestore')
+
+    implementation('com.android.support:multidex:2.0.1') 
+
+    implementation('com.google.android.play:integrity:1.1.0')
+    
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}")
     debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
         exclude group:'com.squareup.okhttp3', module:'okhttp'

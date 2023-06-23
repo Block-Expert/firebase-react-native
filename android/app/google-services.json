@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "844057627362",
+    "project_id": "wallet-integration-test",
+    "storage_bucket": "wallet-integration-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844057627362:android:395ac16ce2ee9ac797acbb",
+        "android_client_info": {
+          "package_name": "com.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844057627362-0j18vi1opj41ftqhkbsu814mal3fk65b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjDF8PY9y8ycaECeZP6w_YIcwDPh_IJFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844057627362-0j18vi1opj41ftqhkbsu814mal3fk65b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

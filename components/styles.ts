@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     textAlignVertical: 'center',
   },
-  textEmail: {
+  textVerficiationCode: {
     backgroundColor: '#FFFFFF',
     width: '100%',
   },
